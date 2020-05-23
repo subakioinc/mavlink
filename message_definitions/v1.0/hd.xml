@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<mavlink>
+
+  <include>common.xml</include>
+  <dialect>0</dialect>
+
+  <enums/>
+
+  <messages>
+    <message id="17001" name="HD_VISION_ESTIMATE">
+      <description>HD Local position/attitude estimate from vision </description>
+      <field type="uint64_t" name="usec" units="us">Timestamp (UNIX time or time since system boot)</field>
+      <field type="float" name="x" units="m">Local X position</field>
+      <field type="float" name="y" units="m">Local Y position</field>
+      <field type="float" name="z" units="m">Local Z position</field>
+      <field type="float" name="roll" units="rad">Roll angle</field>
+      <field type="float" name="pitch" units="rad">Pitch angle</field>
+      <field type="float" name="yaw" units="rad">Yaw angle</field>
+    </message>
+</messages>
+</mavlink>
